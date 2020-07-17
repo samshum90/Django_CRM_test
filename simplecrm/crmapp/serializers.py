@@ -12,9 +12,14 @@ class ActivitySerializer(serializers.ModelSerializer):
         model = Activity
         fields = "__all__"
 
-class ContactSerializer(serializer.ModelSerializer):
+class ActivityStatusSerializer(serializers.ModelSerializer):
     class Meta:
         model = ActivityStatus
+        fields = "__all__"
+
+class ContactSerializer(serializer.ModelSerializer):
+    class Meta:
+        model = Contact
         fields = "__all__"
 
 class ContactSourceSerializer(serializer.ModelSerializer):
